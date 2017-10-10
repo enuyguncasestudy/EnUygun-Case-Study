@@ -1,19 +1,17 @@
 //
 //  UIView+Utilities.swift
-//  Bundle
+//  EnUygun Case Study
 //
-//  Created by Çağdaş Altınkaya on 29/05/2017.
+//  Created by Anıl Sözeri on 05/10/2017.
 //  Copyright © 2017 Bundle. All rights reserved.
 //
 import UIKit
 
 extension UIView {
-  
   @IBInspectable var cornerRadius: CGFloat {
     get {
       return layer.cornerRadius
-    }
-    set {
+    } set {
       layer.cornerRadius = newValue
       layer.masksToBounds = newValue > 0
     }
@@ -22,8 +20,7 @@ extension UIView {
   @IBInspectable var borderWidth: CGFloat {
     get {
       return layer.borderWidth
-    }
-    set {
+    } set {
       layer.borderWidth = newValue
     }
   }
@@ -31,8 +28,7 @@ extension UIView {
   @IBInspectable var borderColor: UIColor? {
     get {
       return UIColor(cgColor: layer.borderColor!)
-    }
-    set {
+    } set {
       layer.borderColor = newValue?.cgColor
     }
   }

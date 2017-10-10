@@ -7,3 +7,25 @@
 //
 
 import Foundation
+import RealmSwift
+
+protocol RealmServiceType {
+  func addFlight(with flight: Flight)
+  func removeAllFlights()
+}
+
+final class RealmService: RealmServiceType {
+  func addFlight(with flight: Flight) {
+    let realm = try! Realm()
+    try! realm.write {
+      realm.add(flight, update: true)
+    }
+  }
+  
+  func removeAllFlights() {
+    let realm = try! Realm()
+    try! realm.write {
+      realm.deleteAll()
+    }
+  }
+}

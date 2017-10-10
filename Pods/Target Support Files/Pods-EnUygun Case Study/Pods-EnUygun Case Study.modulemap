@@ -1,0 +1,6 @@
+framework module Pods_EnUygun_Case_Study {
+  umbrella header "Pods-EnUygun Case Study-umbrella.h"
+
+  export *
+  module * { export * }
+}

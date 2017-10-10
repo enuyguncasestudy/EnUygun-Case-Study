@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import RxSwift
+
+final class FlightTableViewCellViewModel {
+  var isExpanded: Variable<Bool>
+  
+  init() {
+    isExpanded = Variable<Bool>(false)
+  }
+}

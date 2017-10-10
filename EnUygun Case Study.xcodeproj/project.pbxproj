@@ -7,21 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423D1E251F87B7E100C4817E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1E241F87B7E100C4817E /* Styles.swift */; };
+		423D1E271F87CB7600C4817E /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1E261F87CB7600C4817E /* RealmService.swift */; };
 		4284C83B1F85850E00010756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284C83A1F85850E00010756 /* AppDelegate.swift */; };
-		4284C83D1F85850E00010756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284C83C1F85850E00010756 /* ViewController.swift */; };
 		4284C8401F85850E00010756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4284C83E1F85850E00010756 /* Main.storyboard */; };
 		4284C8421F85850E00010756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4284C8411F85850E00010756 /* Assets.xcassets */; };
 		4284C8451F85850E00010756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4284C8431F85850E00010756 /* LaunchScreen.storyboard */; };
+		42C5CEA51F8589ED0072E6B1 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5CEA41F8589ED0072E6B1 /* Flight.swift */; };
+		42C5CEA71F8590920072E6B1 /* FlightSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5CEA61F8590920072E6B1 /* FlightSelectionViewController.swift */; };
+		42C5CEAA1F8590EC0072E6B1 /* FlightSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C5CEA91F8590EC0072E6B1 /* FlightSelectionViewModel.swift */; };
+		42C693041F86E51F00EA5915 /* SearchResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C693031F86E1A000EA5915 /* SearchResults.json */; };
+		42D720E51F86753E006F2BDC /* EnUygunAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D720E41F86753E006F2BDC /* EnUygunAPIService.swift */; };
+		42F628D91F8627AF00FD7123 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F628D81F8627AF00FD7123 /* FlightTableViewCell.swift */; };
+		42F628DB1F862B2200FD7123 /* FlightTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F628DA1F862B2200FD7123 /* FlightTableViewCellViewModel.swift */; };
+		BE89E45C68445ECDA5330D52 /* Pods_EnUygun_Case_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC243D7396EA1950560DA1D /* Pods_EnUygun_Case_Study.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42394C981F860B360042871B /* UIView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
+		423D1E241F87B7E100C4817E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		423D1E261F87CB7600C4817E /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		4284C8371F85850E00010756 /* EnUygun Case Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnUygun Case Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4284C83A1F85850E00010756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4284C83C1F85850E00010756 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4284C83F1F85850E00010756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4284C8411F85850E00010756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4284C8441F85850E00010756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4284C8461F85850E00010756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C5CEA41F8589ED0072E6B1 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		42C5CEA61F8590920072E6B1 /* FlightSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSelectionViewController.swift; sourceTree = "<group>"; };
+		42C5CEA91F8590EC0072E6B1 /* FlightSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSelectionViewModel.swift; sourceTree = "<group>"; };
+		42C693031F86E1A000EA5915 /* SearchResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchResults.json; sourceTree = "<group>"; };
+		42D720E41F86753E006F2BDC /* EnUygunAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnUygunAPIService.swift; sourceTree = "<group>"; };
+		42F628D81F8627AF00FD7123 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		42F628DA1F862B2200FD7123 /* FlightTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		ADC243D7396EA1950560DA1D /* Pods_EnUygun_Case_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnUygun_Case_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7EE496C002549E3F66F066 /* Pods-EnUygun Case Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnUygun Case Study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnUygun Case Study/Pods-EnUygun Case Study.debug.xcconfig"; sourceTree = "<group>"; };
+		F55959907255A0B10BAF2607 /* Pods-EnUygun Case Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnUygun Case Study.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnUygun Case Study/Pods-EnUygun Case Study.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +50,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE89E45C68445ECDA5330D52 /* Pods_EnUygun_Case_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03EE4421FE4F1BA284F68DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC243D7396EA1950560DA1D /* Pods_EnUygun_Case_Study.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		070F6FA420FD821C6E26C361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB7EE496C002549E3F66F066 /* Pods-EnUygun Case Study.debug.xcconfig */,
+				F55959907255A0B10BAF2607 /* Pods-EnUygun Case Study.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		42394C961F860B030042871B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42394C981F860B360042871B /* UIView+Utilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42394C971F860B230042871B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42F628D81F8627AF00FD7123 /* FlightTableViewCell.swift */,
+				42F628DA1F862B2200FD7123 /* FlightTableViewCellViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4284C82E1F85850D00010756 = {
 			isa = PBXGroup;
 			children = (
 				4284C8391F85850E00010756 /* EnUygun Case Study */,
 				4284C8381F85850E00010756 /* Products */,
+				070F6FA420FD821C6E26C361 /* Pods */,
+				03EE4421FE4F1BA284F68DD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +113,77 @@
 			isa = PBXGroup;
 			children = (
 				4284C83A1F85850E00010756 /* AppDelegate.swift */,
-				4284C83C1F85850E00010756 /* ViewController.swift */,
-				4284C83E1F85850E00010756 /* Main.storyboard */,
-				4284C8411F85850E00010756 /* Assets.xcassets */,
-				4284C8431F85850E00010756 /* LaunchScreen.storyboard */,
-				4284C8461F85850E00010756 /* Info.plist */,
+				4284C84D1F85859800010756 /* Config */,
+				4284C8521F8585CD00010756 /* Managers */,
+				4284C8511F8585C700010756 /* Services */,
+				42394C961F860B030042871B /* Extensions */,
+				4284C84F1F8585B000010756 /* Models */,
+				42394C971F860B230042871B /* Views */,
+				4284C84E1F8585A200010756 /* ViewControllers */,
+				4284C84C1F85858D00010756 /* Resources */,
 			);
 			path = "EnUygun Case Study";
+			sourceTree = "<group>";
+		};
+		4284C84C1F85858D00010756 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4284C83E1F85850E00010756 /* Main.storyboard */,
+				4284C8431F85850E00010756 /* LaunchScreen.storyboard */,
+				4284C8411F85850E00010756 /* Assets.xcassets */,
+				42C693031F86E1A000EA5915 /* SearchResults.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4284C84D1F85859800010756 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4284C8461F85850E00010756 /* Info.plist */,
+				423D1E241F87B7E100C4817E /* Styles.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4284C84E1F8585A200010756 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42C5CEA81F8590D80072E6B1 /* FlightSelection */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4284C84F1F8585B000010756 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C5CEA41F8589ED0072E6B1 /* Flight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4284C8511F8585C700010756 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42D720E41F86753E006F2BDC /* EnUygunAPIService.swift */,
+				423D1E261F87CB7600C4817E /* RealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4284C8521F8585CD00010756 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		42C5CEA81F8590D80072E6B1 /* FlightSelection */ = {
+			isa = PBXGroup;
+			children = (
+				42C5CEA61F8590920072E6B1 /* FlightSelectionViewController.swift */,
+				42C5CEA91F8590EC0072E6B1 /* FlightSelectionViewModel.swift */,
+			);
+			path = FlightSelection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4284C8491F85850E00010756 /* Build configuration list for PBXNativeTarget "EnUygun Case Study" */;
 			buildPhases = (
+				3EB078555AA93E5BF99222B1 /* [CP] Check Pods Manifest.lock */,
 				4284C8331F85850E00010756 /* Sources */,
 				4284C8341F85850E00010756 /* Frameworks */,
 				4284C8351F85850E00010756 /* Resources */,
+				9E5A9B9718E681C556293DC0 /* [CP] Embed Pods Frameworks */,
+				2B142E7E5EF191CCFB9F08D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,19 +250,103 @@
 			files = (
 				4284C8451F85850E00010756 /* LaunchScreen.storyboard in Resources */,
 				4284C8421F85850E00010756 /* Assets.xcassets in Resources */,
+				42C693041F86E51F00EA5915 /* SearchResults.json in Resources */,
 				4284C8401F85850E00010756 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B142E7E5EF191CCFB9F08D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnUygun Case Study/Pods-EnUygun Case Study-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EB078555AA93E5BF99222B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnUygun Case Study-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5A9B9718E681C556293DC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EnUygun Case Study/Pods-EnUygun Case Study-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Colours/Colours.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Colours.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnUygun Case Study/Pods-EnUygun Case Study-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4284C8331F85850E00010756 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4284C83D1F85850E00010756 /* ViewController.swift in Sources */,
 				4284C83B1F85850E00010756 /* AppDelegate.swift in Sources */,
+				42C5CEAA1F8590EC0072E6B1 /* FlightSelectionViewModel.swift in Sources */,
+				42F628DB1F862B2200FD7123 /* FlightTableViewCellViewModel.swift in Sources */,
+				423D1E251F87B7E100C4817E /* Styles.swift in Sources */,
+				423D1E271F87CB7600C4817E /* RealmService.swift in Sources */,
+				42C5CEA71F8590920072E6B1 /* FlightSelectionViewController.swift in Sources */,
+				42C5CEA51F8589ED0072E6B1 /* Flight.swift in Sources */,
+				42D720E51F86753E006F2BDC /* EnUygunAPIService.swift in Sources */,
+				42F628D91F8627AF00FD7123 /* FlightTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,28 +481,34 @@
 		};
 		4284C84A1F85850E00010756 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7EE496C002549E3F66F066 /* Pods-EnUygun Case Study.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "EnUygun Case Study/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EnUygun Case Study/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.as.EnUygunCaseStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4284C84B1F85850E00010756 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55959907255A0B10BAF2607 /* Pods-EnUygun Case Study.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "EnUygun Case Study/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EnUygun Case Study/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.as.EnUygunCaseStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

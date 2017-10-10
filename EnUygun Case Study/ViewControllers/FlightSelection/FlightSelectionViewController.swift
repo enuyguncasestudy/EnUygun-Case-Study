@@ -8,28 +8,64 @@
 
 import UIKit
 
-class FlightSelectionViewController: UIViewController {
+final class FlightSelectionViewController: UIViewController {
+  @IBOutlet weak var flightsTableView: UITableView!
+  
+  fileprivate let COLLAPSED_CELL_HEIGHT: CGFloat = 110
+  fileprivate let EXPANDED_CELL_HEIGHT: CGFloat = 200
+  
+  fileprivate let flightTableViewCellIdentifier: String = "FlightTableViewCell"
+  
+  fileprivate let viewModel = FlightSelectionViewModel()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    flightsTableView.rowHeight = UITableViewAutomaticDimension 
+  }
+  
+  // MARK: Action Functions
+  
+  @IBAction func selectFlight(_ sender: UIButton) {
+//    viewModel.saveFlight(with: Flight())
+  }
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+extension FlightSelectionViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: flightTableViewCellIdentifier, for: indexPath) as! FlightTableViewCell
+    
+    cell.configure(with: viewModel.flightCellViewModel(at: indexPath.item))
+    
+    return cell
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return viewModel.FLIGHT_COUNT
+  }
+}
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension FlightSelectionViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    if viewModel.flightCellViewModels.count > indexPath.item && viewModel.flightCellViewModels[indexPath.item].isExpanded.value {
+      return EXPANDED_CELL_HEIGHT
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    return COLLAPSED_CELL_HEIGHT
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let selectedCell = tableView.cellForRow(at: indexPath) as! FlightTableViewCell
+    selectedCell.viewModel.isExpanded.value = !selectedCell.viewModel.isExpanded.value
+    selectedCell.updateSelectFlightButtonConstraint()
+    viewModel.collapseUnselectedCells(selectedIndex: indexPath.item)
+    tableView.beginUpdates()
+    tableView.endUpdates()
+  }
+  
+  func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    guard let unselectedCell = tableView.cellForRow(at: indexPath) as? FlightTableViewCell else { return }
+    unselectedCell.viewModel.isExpanded.value = false
+    unselectedCell.updateSelectFlightButtonConstraint()
+  }
 }

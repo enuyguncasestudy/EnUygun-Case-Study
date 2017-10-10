@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+import Colours
+
+struct Styles {
+  static let greenColor = UIColor(fromHexString: "#80AC4E")!
+  static let whiteColor = UIColor(fromHexString: "#FFFFFF")!
+}

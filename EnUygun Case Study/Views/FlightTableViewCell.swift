@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import RxSwift
 
-class FlightTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+final class FlightTableViewCell: UITableViewCell {
+  @IBOutlet weak var selectFlightButton: UIButton!
+  @IBOutlet weak var selectFlightButtonCenterYConstraint: NSLayoutConstraint!
+  
+  private let ANIMATE_DURATION: TimeInterval = 0.35
+  
+  private let DEFAULT_SPACE: CGFloat = 8
+  private let EXPANDED_SELECT_FLIGHT_BUTTON_CONSTRAINT: CGFloat = 90
+  
+  var viewModel: FlightTableViewCellViewModel!
+  
+  override func prepareForReuse() {
+    super.prepareForReuse()
+  }
+  
+  func configure(with viewModel: FlightTableViewCellViewModel) {
+    self.viewModel = viewModel
+  }
+  
+  func updateSelectFlightButtonConstraint() {
+    selectFlightButtonCenterYConstraint.constant = viewModel.isExpanded.value ? EXPANDED_SELECT_FLIGHT_BUTTON_CONSTRAINT - DEFAULT_SPACE : 0
+    selectFlightButton.backgroundColor = viewModel.isExpanded.value ? Styles.greenColor : Styles.whiteColor
+    selectFlightButton.setTitleColor(viewModel.isExpanded.value ? Styles.whiteColor : Styles.greenColor, for: .normal)
+    
+    UIView.animate(withDuration: ANIMATE_DURATION) {
+      self.layoutIfNeeded()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+  }
 }
